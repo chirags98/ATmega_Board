@@ -19922,7 +19922,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="LCD" library="SparkFun-Displays" deviceset="LCD-16X2" device="NOSILK"/>
 <part name="FTDI" library="SparkFun-Connectors" deviceset="6_PIN_SERIAL_CABLE" device="PTH"/>
 <part name="7805" library="SparkFun-IC-Power" deviceset="V_REG_78XX" device="7812" value="5V"/>
-<part name="ASP" library="SparkFun-Connectors" deviceset="AVR_SPI_PROG_5X2" device="PTH2"/>
+<part name="USB-ASP" library="SparkFun-Connectors" deviceset="AVR_SPI_PROG_5X2" device="PTH2"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" value=".1uF"/>
@@ -19933,12 +19933,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="C1" library="resistor" deviceset="CPOL-EU" device="E2.5-6" value="10uf"/>
 <part name="PORT_D" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X8" device="" package3d_urn="urn:adsk.eagle:package:22409/2"/>
 <part name="PORT_C" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
-<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
+<part name="PORT_B" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" value="0.33µF"/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" value="220"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" value=".1uF"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" value=".1uF"/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20002,7 +20004,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="NAME" x="69.85" y="148.59" size="1.778" layer="95"/>
 <attribute name="VALUE" x="71.12" y="146.05" size="1.778" layer="96"/>
 </instance>
-<instance part="ASP" gate="G$1" x="-40.64" y="99.06" smashed="yes">
+<instance part="USB-ASP" gate="G$1" x="-40.64" y="99.06" smashed="yes">
 <attribute name="NAME" x="-43.18" y="107.188" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="-55.626" y="85.344" size="1.778" layer="96" font="vector"/>
 </instance>
@@ -20025,11 +20027,13 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </instance>
 <instance part="PORT_D" gate="A" x="132.08" y="71.12"/>
 <instance part="PORT_C" gate="A" x="132.08" y="45.72"/>
-<instance part="JP3" gate="A" x="132.08" y="22.86"/>
+<instance part="PORT_B" gate="A" x="132.08" y="22.86"/>
 <instance part="JP1" gate="A" x="132.08" y="5.08"/>
 <instance part="C2" gate="G$1" x="7.62" y="76.2"/>
 <instance part="R1" gate="G$1" x="55.88" y="114.3"/>
 <instance part="C5" gate="G$1" x="2.54" y="55.88"/>
+<instance part="C6" gate="G$1" x="104.14" y="2.54"/>
+<instance part="GND2" gate="1" x="104.14" y="-7.62"/>
 </instances>
 <busses>
 </busses>
@@ -20069,7 +20073,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="78.74" y1="142.24" x2="83.82" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="ASP" gate="G$1" pin="VCC"/>
+<pinref part="USB-ASP" gate="G$1" pin="VCC"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="-30.48" y1="104.14" x2="-27.94" y2="104.14" width="0.1524" layer="91"/>
 </segment>
@@ -20139,12 +20143,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </segment>
 <segment>
 <pinref part="GND24" gate="1" pin="GND"/>
-<pinref part="ASP" gate="G$1" pin="GND@4"/>
+<pinref part="USB-ASP" gate="G$1" pin="GND@4"/>
 <wire x1="-27.94" y1="93.98" x2="-30.48" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="ASP" gate="G$1" pin="GND@3"/>
-<pinref part="ASP" gate="G$1" pin="GND@2"/>
+<pinref part="USB-ASP" gate="G$1" pin="GND@3"/>
+<pinref part="USB-ASP" gate="G$1" pin="GND@2"/>
 <wire x1="-30.48" y1="96.52" x2="-30.48" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="ASP" gate="G$1" pin="GND@1"/>
+<pinref part="USB-ASP" gate="G$1" pin="GND@1"/>
 <wire x1="-30.48" y1="99.06" x2="-30.48" y2="101.6" width="0.1524" layer="91"/>
 <junction x="-30.48" y="99.06"/>
 <wire x1="-30.48" y1="96.52" x2="-30.48" y2="93.98" width="0.1524" layer="91"/>
@@ -20174,6 +20178,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="JP1" gate="A" pin="3"/>
 <wire x1="129.54" y1="2.54" x2="127" y2="2.54" width="0.1524" layer="91"/>
 <label x="124.46" y="2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="-2.54" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="PB6/CRYSTAL1" class="0">
@@ -20302,9 +20311,17 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="ASP" gate="G$1" pin="RESET"/>
+<pinref part="USB-ASP" gate="G$1" pin="RESET"/>
 <wire x1="-48.26" y1="99.06" x2="-50.8" y2="99.06" width="0.1524" layer="91"/>
 <label x="-50.8" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="45.72" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="124.46" y1="-12.7" x2="121.92" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-12.7" x2="124.46" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="124.46" y="-12.7"/>
 </segment>
 </net>
 <net name="PD0/RX" class="0">
@@ -20384,7 +20401,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="35.56" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="1"/>
+<pinref part="PORT_B" gate="A" pin="1"/>
 <wire x1="129.54" y1="30.48" x2="127" y2="30.48" width="0.1524" layer="91"/>
 <label x="124.46" y="30.48" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -20396,7 +20413,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="35.56" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="2"/>
+<pinref part="PORT_B" gate="A" pin="2"/>
 <wire x1="129.54" y1="27.94" x2="127" y2="27.94" width="0.1524" layer="91"/>
 <label x="124.46" y="27.94" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -20408,7 +20425,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="35.56" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="3"/>
+<pinref part="PORT_B" gate="A" pin="3"/>
 <wire x1="129.54" y1="25.4" x2="127" y2="25.4" width="0.1524" layer="91"/>
 <label x="124.46" y="25.4" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -20420,12 +20437,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="35.56" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="ASP" gate="G$1" pin="MOSI"/>
+<pinref part="USB-ASP" gate="G$1" pin="MOSI"/>
 <wire x1="-48.26" y1="104.14" x2="-50.8" y2="104.14" width="0.1524" layer="91"/>
 <label x="-50.8" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="4"/>
+<pinref part="PORT_B" gate="A" pin="4"/>
 <wire x1="129.54" y1="22.86" x2="127" y2="22.86" width="0.1524" layer="91"/>
 <label x="124.46" y="22.86" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -20437,12 +20454,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="35.56" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="ASP" gate="G$1" pin="MISO"/>
+<pinref part="USB-ASP" gate="G$1" pin="MISO"/>
 <wire x1="-48.26" y1="93.98" x2="-50.8" y2="93.98" width="0.1524" layer="91"/>
 <label x="-50.8" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="5"/>
+<pinref part="PORT_B" gate="A" pin="5"/>
 <wire x1="129.54" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
 <label x="124.46" y="20.32" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -20454,12 +20471,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="35.56" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="ASP" gate="G$1" pin="SCK"/>
+<pinref part="USB-ASP" gate="G$1" pin="SCK"/>
 <wire x1="-48.26" y1="96.52" x2="-50.8" y2="96.52" width="0.1524" layer="91"/>
 <label x="-50.8" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="6"/>
+<pinref part="PORT_B" gate="A" pin="6"/>
 <wire x1="129.54" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
 <label x="124.46" y="17.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -20474,6 +20491,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="JP1" gate="A" pin="2"/>
 <wire x1="129.54" y1="5.08" x2="127" y2="5.08" width="0.1524" layer="91"/>
 <label x="124.46" y="5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="5.08" x2="104.14" y2="7.62" width="0.1524" layer="91"/>
+<label x="101.6" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CTS" class="0">
@@ -20546,6 +20568,16 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="PORT_D" gate="A" pin="8"/>
 <wire x1="129.54" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
 <label x="124.46" y="63.5" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<wire x1="129.54" y1="-15.24" x2="124.46" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<wire x1="129.54" y1="-17.78" x2="124.46" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
