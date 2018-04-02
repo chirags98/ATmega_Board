@@ -20679,13 +20679,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </part>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
-<part name="PB5" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE">
+<part name="PB5" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="Yellow">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" value="330">
+<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" value="1K">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -20695,7 +20695,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" value="330">
+<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" value="1K">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -20739,12 +20739,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </part>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" value="330">
+<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" value="1K">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" value="330">
+<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" value="1K">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -21738,30 +21738,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <plain>
 </plain>
 <instances>
-<instance part="P+14" gate="1" x="-5.08" y="66.04" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-5.08" y="68.58" size="1.778" layer="96" rot="R180"/>
+<instance part="P+14" gate="1" x="15.24" y="66.04" smashed="yes" rot="R90">
+<attribute name="VALUE" x="15.24" y="68.58" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND21" gate="1" x="22.86" y="73.66" rot="R270"/>
-<instance part="GND20" gate="1" x="7.62" y="58.42" rot="R270"/>
+<instance part="GND20" gate="1" x="20.32" y="58.42" rot="R270"/>
 <instance part="R7" gate="G$1" x="22.86" y="25.4" rot="R90">
 <attribute name="OC_FARNELL" x="22.86" y="25.4" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="22.86" y="25.4" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="22.86" y="25.4" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND22" gate="1" x="22.86" y="15.24"/>
-<instance part="CONT" gate="1" x="-36.825290625" y="64.38225" smashed="yes">
-<attribute name="NAME" x="-42.794290625" y="60.57225" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-40.635290625" y="60.57225" size="1.778" layer="96" rot="R90"/>
-<attribute name="OC_FARNELL" x="-36.825290625" y="64.38225" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="-36.825290625" y="64.38225" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="-36.825290625" y="64.38225" size="1.778" layer="96" display="off"/>
+<instance part="CONT" gate="1" x="-8.885290625" y="64.38225" smashed="yes">
+<attribute name="NAME" x="-14.854290625" y="60.57225" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-12.695290625" y="60.57225" size="1.778" layer="96" rot="R90"/>
+<attribute name="OC_FARNELL" x="-8.885290625" y="64.38225" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="-8.885290625" y="64.38225" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="-8.885290625" y="64.38225" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="P+13" gate="1" x="-38.1" y="73.66" smashed="yes">
-<attribute name="VALUE" x="-35.56" y="76.2" size="1.778" layer="96" rot="R180"/>
+<instance part="P+13" gate="1" x="-10.16" y="73.66" smashed="yes">
+<attribute name="VALUE" x="-7.62" y="76.2" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND19" gate="1" x="-38.1" y="55.88"/>
-<instance part="P+12" gate="1" x="-48.26" y="33.02" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-43.18" y="35.56" size="1.778" layer="96" rot="R180"/>
+<instance part="GND19" gate="1" x="-10.16" y="55.88"/>
+<instance part="P+12" gate="1" x="-5.08" y="33.02" smashed="yes" rot="R90">
+<attribute name="VALUE" x="0" y="35.56" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="LCD1" gate="G$1" x="35.56" y="48.26">
 <attribute name="OC_FARNELL" x="35.56" y="48.26" size="1.778" layer="96" display="off"/>
@@ -21774,22 +21774,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <nets>
 <net name="PD7/LCD_RS" class="0">
 <segment>
-<wire x1="25.4" y1="60.96" x2="-7.62" y2="60.96" width="0.1524" layer="91"/>
-<label x="-7.62" y="60.96" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
+<label x="15.24" y="60.96" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="LCD1" gate="G$1" pin="RS"/>
 </segment>
 </net>
 <net name="PD6/LCD_E" class="0">
 <segment>
-<wire x1="25.4" y1="55.88" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
-<label x="-7.62" y="55.88" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="55.88" x2="15.24" y2="55.88" width="0.1524" layer="91"/>
+<label x="15.24" y="55.88" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="LCD1" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="25.4" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="58.42" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="LCD1" gate="G$1" pin="R/W"/>
 </segment>
 <segment>
@@ -21805,16 +21805,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
 <pinref part="CONT" gate="1" pin="A"/>
-<wire x1="-38.1" y1="58.42" x2="-36.825290625" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-36.825290625" y1="58.42" x2="-36.825290625" y2="59.30225" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="58.42" x2="-8.885290625" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-8.885290625" y1="58.42" x2="-8.885290625" y2="59.30225" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="25.4" y1="63.5" x2="-15.24" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="63.5" x2="-2.54" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="CONT" gate="1" pin="S"/>
-<wire x1="-31.745290625" y1="64.38225" x2="-15.24" y2="64.38225" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="64.38225" x2="-15.24" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-3.805290625" y1="64.38225" x2="-2.54" y2="64.38225" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="64.38225" x2="-2.54" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="LCD1" gate="G$1" pin="VO"/>
 </segment>
 </net>
@@ -21822,45 +21822,45 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="P+14" gate="1" pin="+5V"/>
 <pinref part="LCD1" gate="G$1" pin="VDD"/>
-<wire x1="-2.54" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+13" gate="1" pin="+5V"/>
 <pinref part="CONT" gate="1" pin="E"/>
-<wire x1="-38.1" y1="71.12" x2="-36.825290625" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-36.825290625" y1="71.12" x2="-36.825290625" y2="69.46225" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="71.12" x2="-8.885290625" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-8.885290625" y1="71.12" x2="-8.885290625" y2="69.46225" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+12" gate="1" pin="+5V"/>
-<wire x1="25.4" y1="33.02" x2="-45.72" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="33.02" x2="-2.54" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="LCD1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="PD2/LCD_D7" class="0">
 <segment>
-<wire x1="25.4" y1="35.56" x2="-12.7" y2="35.56" width="0.1524" layer="91"/>
-<label x="-12.7" y="35.56" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
+<label x="15.24" y="35.56" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="LCD1" gate="G$1" pin="DB7"/>
 </segment>
 </net>
 <net name="PD3/LCD_D6" class="0">
 <segment>
-<wire x1="25.4" y1="38.1" x2="-12.7" y2="38.1" width="0.1524" layer="91"/>
-<label x="-12.7" y="38.1" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="38.1" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
+<label x="15.24" y="38.1" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="LCD1" gate="G$1" pin="DB6"/>
 </segment>
 </net>
 <net name="PD4/LCD_D5" class="0">
 <segment>
-<wire x1="25.4" y1="40.64" x2="-12.7" y2="40.64" width="0.1524" layer="91"/>
-<label x="-12.7" y="40.64" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
+<label x="15.24" y="40.64" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="LCD1" gate="G$1" pin="DB5"/>
 </segment>
 </net>
 <net name="PD5/LCD_D4" class="0">
 <segment>
-<wire x1="25.4" y1="43.18" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
-<label x="-12.7" y="43.18" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="43.18" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
+<label x="15.24" y="43.18" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="LCD1" gate="G$1" pin="DB4"/>
 </segment>
 </net>
