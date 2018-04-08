@@ -1,0 +1,30 @@
+Order list for C:/Users/Chirag/Desktop/ATmega Design/ATmega_Board/PCB Design/ATmega Board/PCB Design.sch
+Exported from EAGLE with DesignLink
+
+Quantity	Value	Package	Order code	Manufacturer	Manuf. Code	Availability	Price (from)	Description
+11	POWER_JACK	POWER_JACK_PTH	1310918	MULTICOMP	SPC21365	4534	75.3	MULTICOMP - SPC21365 - CONNECTOR, DC POWER, JACK, 5A
+11	V_REG_LD1117VXXLD1117-SMD	SOT223	unknown					
+11	5V	TO-252	unknown					
+11	ATMEGA328P-PU	DIP254P762X457-28	1715487	MICROCHIP	ATMEGA328P-PU	823	120.45	MICROCHIP - ATMEGA328P-PU - MCU, 8BIT, ATMEGA, 20MHZ, DIP-28
+33	10uf	E2,5-6	unknown					
+33	.1uF	C0805K	unknown					
+11	0.33µF	C0805K	unknown					
+22	22pF	C0805K	unknown					
+11	.1uf	C0805K	unknown					
+11	50k	S64W	unknown					
+11		1X02	unknown					
+11		2X08	unknown					
+22		2X06	unknown					
+11		2X03	unknown					
+11		2X07	unknown					
+11	LCD-16X2NOSILK	LCD-16X2_NOSILK	unknown					
+11	BLUE	LED-0603	unknown					
+11	RED	LED-0603	unknown					
+11	16MHz	HC49U70	unknown					
+44	330	M0805	unknown					
+11	10k	M0805	unknown					
+11	220	M0805	unknown					
+11		B3F-10XX	176432	OMRON ELECTRONIC COMPONENTS	B3F-1000	35652	14.54	OMRON ELECTRONIC COMPONENTS - B3F-1000 - SWITCH, SPNO, 0.05A, 24V, THT, 0.98N
+22	Yellow	LED-0603	unknown					
+11	6_PIN_SERIAL_CABLEPTH	FTDI_BASIC	unknown					
+11	AVR_SPI_PROG_5X2PTH2	2X5-SHROUDED	unknown					
